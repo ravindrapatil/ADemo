@@ -1,0 +1,7 @@
+[
+    {"id" : 1, "name" : "Sales Order"}, 
+    {"id" : 2, "name" : "GEO Location" },
+    {"id" : 3, "name" : "Order Items" },
+    {"id" : 4, "name" : "Product Class" },
+    {"id" : 5, "name" : "Product Class Name" }
+]

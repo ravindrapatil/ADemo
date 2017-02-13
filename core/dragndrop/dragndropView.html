@@ -1,0 +1,32 @@
+<div class="clearfix"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">&nbsp;</div>
+		<div class="col-md-4">
+			<h4>Drag</h4>
+			<div class="dragndrop-box">
+				<div ng-repeat="item in dragItems">
+					<button class="btn btn-success" draggable="true" itemid="{{item.id}}">{{item.name}}</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4>Drop</h4>
+			<div class="dragndrop-box" droptarget="true">
+				<div ng-repeat="item in dropped" >
+					<button class="btn btn-warning" itemid="{{item.id}}">{{item.name}}</button>
+                </div>
+			</div>
+		</div>
+		<div class="col-md-2">&nbsp;</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+            <div ng-if="hideGrid" class="drop-grid">
+                <div ui-grid="gridOptions" ui-grid-pagination class="grid"></div>
+            </div>
+        </div>
+	</div>
+</div>
+<div class="clearfix"></div>

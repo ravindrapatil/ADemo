@@ -12,14 +12,24 @@
         <link rel="shortcut icon" href="">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/animate.css">
     </head>
     <body data-ng-controller="IndexController as IC">
-        <div class="container">
-            <header data-ui-view="header"></header>
-            <nav data-ui-view="menu" role="navigation"></nav>
-            <section data-ui-view="content"></section>
+        <div id="wrap">
+            <div class="container-fluid">
+                <header data-ui-view="header"></header>
+                <nav data-ui-view="menu" role="navigation"></nav>
+                <section data-ui-view="content"></section>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                 <a href="mailto:ravindra.spatil@gmail.com" target="_blank">Ravindra S Patil, Email: ravindra.spatil@gmail.com</a>
+            </div>
         </div>
 
         <!--[if lt IE 7]>
@@ -37,6 +47,8 @@
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+        <script src="assets/js/d3.v4.min.js"></script>
         <!-- Application scripts: -->
         <script src="core/app.js"></script>
         <script src="core/app.routes.js"></script>
@@ -44,14 +56,27 @@
         <script src="core/form/formController.js"></script>
         <script src="core/home/homeController.js"></script>
         <script src="core/home/homeService.js"></script>
-        <script src="core/json/jsonController.js"></script>
-        <script src="core/json/jsonService.js"></script>
+        <script src="core/uigrid/uigridController.js"></script>
+        <script src="core/uigrid/uigridService.js"></script>
+        <script src="core/dragndrop/dragndropController.js"></script>
+        <script src="core/dragndrop/dragndropService.js"></script>
+        <script src="core/d3/d3Controller.js"></script>
+        <script src="core/d3/d3Service.js"></script>
+        <script src="core/nestednavigation/nestednavigationController.js"></script>
+        <script src="core/nestednavigation/nestednavigationService.js"></script>
+        <script src="core/nestednavigation/listController.js"></script>
+        <script src="core/nestednavigation/detailsController.js"></script>
         <script src="core/navigation/footerController.js"></script>
         <script src="core/navigation/headerController.js"></script>
         <script src="core/navigation/menuController.js"></script>
         <script src="common/directives/aboutDirective.js"></script>
         <script src="common/directives/datepickerDirective.js"></script>
+        <script src="common/directives/draggableDirective.js"></script>
+        <script src="common/directives/droptargetDirective.js"></script>
+        <script src="common/directives/d3barchartDirective.js"></script>
+        <script src="common/directives/d3chartformDirective.js"></script>
         <script src="common/constants/constants.js"></script>
         <script src="common/filters/filters.js"></script>
+        <script src="common/filters/brands.js"></script>
     </body>
 </html>

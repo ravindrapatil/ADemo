@@ -54,19 +54,81 @@
                         }
                     }
                 })
-                .state('root.json', {
-                    url: 'json',
+                .state('root.uigrid', {
+                    url: 'uigrid',
                     data: {
-                        title: 'Json',
-                        breadcrumb: 'Json'
+                        title: 'UI Grid',
+                        breadcrumb: 'UI Grid'
                     },
                     views: {
                         'content@': {
-                            templateUrl: 'core/json/jsonView.html',
-                            controller: 'JsonController',
-                            controllerAs: 'JC'
+                            templateUrl: 'core/uigrid/uigridView.html',
+                            controller: 'UIGridController',
+                            controllerAs: 'UC'
                         }
                     }
+                })
+                .state('root.dragndrop', {
+                    url: 'dragndrop',
+                    data: {
+                        title: 'Drag And Drop',
+                        breadcrumb: 'Drag-N-Drop'
+                    },
+                    views: {
+                        'content@': {
+                            templateUrl: 'core/dragndrop/dragndropView.html',
+                            controller: 'DragnDropController',
+                            controllerAs: 'DNDC'
+                        }
+                    }
+                })
+                .state('root.d3', {
+                    url: 'd3',
+                    data: {
+                        title: 'D3',
+                        breadcrumb: 'D3'
+                    },
+                    views: {
+                        'content@': {
+                            templateUrl: 'core/d3/d3View.html',
+                            controller: 'D3Controller',
+                            controllerAs: 'D3C'
+                        }
+                    }
+                })
+                .state('root.nestednavigation', {
+                    url: 'nestednavigation',
+                    data: {
+                        title: 'Nested Navigation',
+                        breadcrumb: 'Nested Navigation'
+                    },
+                    views: {
+                        'content@': {
+                            templateUrl: 'core/nestednavigation/nestednavigationView.html',
+                            controller: 'NestedNavController',
+                            controllerAs: 'NNC'
+                        }
+                    }
+                })
+                .state('root.nestednavigation.list', {
+                    url: '/list',
+                    data: {
+                        title: 'List Navigation',
+                        breadcrumb: 'List Navigation'
+                    },
+                    templateUrl: 'core/nestednavigation/listView.html',
+                    controller: 'ListController',
+                    controllerAs: 'LC'
+                })
+                .state('root.nestednavigation.list.details', {
+                    url: '/details/:id',
+                    data: {
+                        title: 'List Details',
+                        breadcrumb: 'List Details'
+                    },
+                    templateUrl: 'core/nestednavigation/detailsView.html',
+                    controller: 'DetailsController',
+                    controllerAs: 'DC'
                 })
                 .state('root.form', {
                     url: 'form',

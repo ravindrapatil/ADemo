@@ -13,7 +13,7 @@
         };
 
         function getData() {
-            return $http.get('/productsList')
+            return $http.get('assets/data/products.json')
                     .then(getDataComplete)
                     .catch(getDataFailed);
 

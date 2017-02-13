@@ -1,5 +1,5 @@
 <div class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -7,13 +7,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="app-title" class="navbar-brand" href="#/">Glimpze</a>
+            <span id="app-title" class="navbar-brand name" href="#">RSP</span>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li data-ng-class="MC.getClass('root.home')"><a id="home-page-link" data-ui-sref="root.home">Home</a></li>
-                <li data-ng-class="MC.getClass('root.json')"><a id="json-page-link" data-ui-sref="root.json">JSON</a></li>
-                <li data-ng-class="MC.getClass('root.form')"><a id="form-page-link" data-ui-sref="root.form">Form</a></li>
+                <li data-ng-class="MC.getClass('root.home')"><a id="home-page-link" data-ui-sref="root.home">Shopping</a></li>
+                <li data-ng-class="MC.getClass('root.uigrid')"><a id="uigrid-page-link" data-ui-sref="root.uigrid">UI Grid (Table)</a></li>
+                <li data-ng-class="MC.getClass('root.dragndrop')"><a id="dragndrop-page-link" data-ui-sref="root.dragndrop">Drag n Drop</a></li>
+                <li data-ng-class="MC.getClass('root.d3')"><a id="d3-page-link" data-ui-sref="root.d3">D3 JS</a></li>
+                <li data-ng-class="MC.getClass('root.nestednavigation')"><a id="nestednavigation-page-link" data-ui-sref="root.nestednavigation">Nested Navigation</a></li>
             </ul>
         </div>
     </div>

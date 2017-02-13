@@ -8,3 +8,161 @@
     cursor: pointer;
     background-color: white;
 }
+
+html,
+body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+}
+
+#push,
+#footer {
+	height: 40px;
+}
+
+#footer {
+	background-color: #f2f2f2;
+	border-top: 1px solid #e0e0e0;
+	text-align: center;
+	line-height: 35px;
+}
+
+#footer a {
+	color: #333;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.name {
+	color: #067bdf !important;
+}
+
+.navbar-default {
+	background:#333;
+	border-radius:0
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #aaaaaa;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background: #525252;
+	color: #fff;
+}
+
+ul.filter-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.product-info {
+	margin: 0 0 40px 0;
+}
+
+.product-img {
+	background: url("../images/prd1.jpeg") no-repeat top center;
+	height: 250px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.product-img .added-item {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.stopevent {
+	pointer-events: none;
+}
+
+.dragndrop-box {
+	border:1px solid #ddd;
+	border-radius: 5px;
+	padding:10px;
+	height:250px;
+}
+
+.dragndrop-box button {
+	width: 100%;
+	display: block;
+	margin: 0 0 10px;
+}
+
+.drop-grid {
+	margin: 20px 0;
+}
+
+
+.chart {
+    background: #eee;
+    padding: 3px;
+}
+
+.chart div {
+  width: 0;
+  transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: #337ab7;
+  text-align: right;
+  padding: 15px;
+  margin: 15px;
+  color: #000;
+  box-shadow: 2px 2px 2px #666;
+  font-size: 15px;
+}
+
+.info {
+	color:red;
+	font-size:12px;
+	margin-top: 7px;
+} 
+
+.cart-btn-holder {
+	text-align:right;
+	margin-bottom:20px
+}
+
+ul.user-profiles-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul.user-profiles-list li a {
+	background: #d2d2d2;
+	padding: 10px;
+	margin: 10px 0; 
+	border-radius: 5px;
+	display: block;
+	cursor: pointer;
+}
+
+ul.user-profiles-list li a:hover {
+	text-decoration: none;
+};
+
+.user-profiles-details {
+	margin: 10px 0;
+}

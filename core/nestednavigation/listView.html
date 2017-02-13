@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="user-profiles-list">
+				<li ng-repeat="product in products" >
+					<a ui-sref=".details({ id: product._id})">{{product.name}}</a>
+					<!-- // ng-click="addtocart(product._id)" -->
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-9">
+			<div data-ui-view></div>
+		</div>
+	</div>
+	
+</div>

@@ -1,19 +1,19 @@
 (function () {
     'use strict';
 
-    angular.module('app.jsonService', [])
+    angular.module('app.nestednavigationService', [])
 
-            .factory('jsonService', jsonService);
+            .factory('nestednavigationService', nestednavigationService);
 
-    jsonService.$inject = ['$http', '$log', '$q'];
+    nestednavigationService.$inject = ['$http', '$log', '$q'];
 
-    function jsonService($http, $log, $q) {
+    function nestednavigationService($http, $log, $q) {
         return {
             getData: getData
         };
 
         function getData() {
-            return $http.get('assets/data/data.json')
+            return $http.get('assets/data/products.json')
                     .then(getDataComplete)
                     .catch(getDataFailed);
 
